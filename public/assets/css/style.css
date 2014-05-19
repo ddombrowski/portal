@@ -1,0 +1,82 @@
+/* CSS Document */
+
+body	{ margin:0; padding:0; background:url(/assets/img/background.jpg) center left fixed; font-family:'Lato', Tahoma, Geneva, sans-serif; font-size:12px; }
+
+.wrapper-1000px		{ width:1000px; margin:auto; margin-top:0; }
+
+/*
+header stuff
+*/
+#header-wrapper		{ float:left; width:100%; padding-top:20px; } /* padding is for toolbar */
+#header-wrapper h1 { font-family:"Playfair Display", "Times New Roman", Serif; font-weight:bold; font-size:36px; margin:10px 0; }
+#header-wrapper .toolbar { position:relative; float:left; width:100%; box-shadow:0px 0px 3px 1px #555; padding:10px 0px; }
+#nav-bar-container { z-index:1; background:#fff; color:#999; text-shadow:0px 1px 0px #000; }
+#top-level-nav	{ z-index:0; background:#900; color:#ccc; text-shadow:0px 1px 0px #000; font-size:12px; }
+#nav-bar-container ul li, #top-level-nav ul li	{ margin-right:20px; }
+
+#search-container input { float:left; margin-right:5px; padding:10px 5px; border:none; border-radius:5px; background:#999; color:000; box-shadow:0px 0px 3px 1px #666 inset; }
+#search-container input[type=text]		{ width:300px; height:14px; }
+#search-container button	{ width:70px; height:34px; background:#ccc; box-shadow:0px 0px 10px 1px #999 inset; text-shadow:0px 1px 0px #ccc;  }
+
+/*
+content stuff
+*/
+#content-container	{ float:left; clear:left; width:100%; margin-top:30px; position:static; }
+#content-container .header { float:left; clear:left; width:100%; padding:0px; color:#000; margin-bottom:20px; text-indent:10px; font-size:26px; font-weight:bold; font-family:"Playfair Display", "Times New Roman", Serif; }
+#content-container h1	{ float:left; clear:left; width:100%; font-size:24px; }
+#content-container h1 .nav	{ float:right; font-size:14px; }
+#content-container h1 .nav a	{ float:left; margin-left:10px; }
+#content-container h2	{ font-family:'Asul', 'Times New Roman', Serif; float:left; width:100%; padding-bottom:5px; font-size:20px; font-weight:bold; margin:0; border-bottom:1px solid #333; margin-bottom:20px; }
+
+.content-box { float:left; width:250px; padding:15px; padding-top:0; background:#fff; border-radius:5px; box-shadow:0px 0px 3px 1px #aaa; }
+
+#nav-bar { width:250px; margin-right:15px; }
+#nav-bar ul { margin-top:15px; }
+#content { float:right; width:670px; padding-top:15px; }
+
+
+.portal-nav-nav-list-li-selected { background:#ff6700; color:#fff; border-top-left-radius:3px; border-top-right-radius:3px; cursor:pointer; text-shadow:0px 1px 0px #630; }
+#portal-nav	{ float:left; clear:left; margin:2px; background:#fff; width:980px; padding:8px; border-bottom-left-radius:3px; border-bottom-right-radius:3px; box-shadow:0px 0px 3px 1px #cecece inset; text-indent:0; font-size:12px; font-weight:normal; }
+#portal-nav .link { float:left; clear:left; font-weight:bold; }
+#portal-nav ul { list-style:none; margin:0; padding:0; }
+#portal-nav li { float:left; padding:5px 15px; font-size:14px; }
+#portal-nav li .no-sub:hover { background:#ff6700; color:#fff; border-top-left-radius:3px; border-top-right-radius:3px; cursor:pointer; text-shadow:0px 1px 0px #630; }
+#portal-nav .sub-list { display:none; float:left; clear:left; width:100%; border-top:#ff6700 solid 1px; }
+
+.error-color	{ background-color:#FCC; }
+.error-page		{ float:left; clear:left; color:#C00; width:45%; margin:0 25%; padding:0 20px; background:#FCC; border:1px solid #600; border-radius:5px; }
+.error-box	{ float:left; clear:left; padding:10px 20px; background:#FCC; border:1px solid #F00; border-radius:5px; font-weight:bold; }
+.success-box	{ float:left; clear:left; padding:10px 20px; background:#6F6; border:1px solid #3C0; border-radius:5px; font-weight:bold; }
+
+td.heading	{ font-weight:bold; font-size:14px; }
+td button	{ font-size:10px; padding:2px; }
+td button.edit:hover	{ background:#FC0; }
+td button.delete:hover	{ background:#F33; }
+
+.formpage label	{ float:left; clear:left; width:150px; text-align:right; margin-top:15px; margin-right:5px; }
+.formpage input[type=text],input[type=password],select	{ float:left; width:300px; padding:10px 5px; background:#eee; border:none; border-radius:3px; margin-left:5px; margin-top:5px; box-shadow:0px 0px 3px 1px #ccc inset; }
+.formpage textarea	{ float:left; width:300px; height:75px; padding:10px 5px; background:#eee; border:none; border-radius:3px; margin-left:5px; margin-top:5px; box-shadow:0px 0px 3px 1px #ccc inset; font-family:Arial, Helvetica, sans-serif; font-size:12px; }
+.formpage input[type=checkbox]	{ float:left; margin-top:15px; }
+.formpage input[type=button],input[type=submit]	{ float:left; clear:left; margin-top:15px; margin-left:160px; padding:10px; border:none; border-radius:3px; background:#ccc; box-shadow:0px 0px 10px 1px #999 inset; text-shadow:0px 1px 0px #fff; cursor:pointer; }
+.formpage input[type=button]:hover,input[type=submit]:hover	{ float:left; clear:left; margin-top:15px; margin-left:160px; padding:10px; border:none; border-radius:3px; background:#ccc; box-shadow:0px 0px 10px 1px #000 inset; text-shadow:0px 1px 0px #fff; }
+.formpage .input-error			{ float:left; clear:none; padding:10px 5px; border-radius:3px; margin-left:5px; margin-top:5px; display:none; }
+
+.edit-controls { float:left; clear:left; }
+.edit-controls .btn { float:left; width:10px; height:10px; padding:10px; margin:5px; text-align:center; font-size:14px; font-weight:bold; border:none; border-radius:3px; }
+.edit-controls .new { background-color:#FC0; }
+.edit-controls .delete { background-color:#C00; }
+.edit-controls .save { background-color:#0C0; }
+.edit-controls .edit { background-color:#36F; }
+
+/*
+footer stuff
+*/
+#footer-wrapper	{ float:left; clear:left; width:100%; margin-top:50px; }
+#footer-container { color:#ccc; padding:10px; font-size:10px; }
+
+ul.links	{ float:left; clear:left; width:100%; list-style:none; margin:0; padding:0; }
+ul.links li	{ float:left; }
+ul.links li.vertical { clear:left; margin-bottom:2px; font-size:14px; }
+ul.links li.vertical-title { font-size:12px; border-bottom:1px solid #ccc; width:100%; margin-bottom:5px; color:#ccc; font-weight:bold; }
+ul.links li a { color:inherit; text-decoration:none; }
+ul.links li a:hover { text-decoration:underline; }
